@@ -1,4 +1,7 @@
 body{
     color: brown;
-    background-color: darksalmon;
+    background-image: url(splash.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
 }
