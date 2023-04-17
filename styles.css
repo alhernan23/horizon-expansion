@@ -1,6 +1,57 @@
-body{
-    color: brown;
-    background-image: url(splash.png);
+#index{
+    background-image: url(img/index.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#next{
+    background-image: url(img/index2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#no{
+    background-image: url(img/no.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#loading{
+    background-color: black;
+}
+
+#start{
+    background-image: url(img/start.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#puzzle1{
+    background-image: url(img/backrooms.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#puzzle2{
+    background-image: url(img/mall.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#puzzle3{
+    background-image: url(img/pool.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#puzzle4{
+    background-image: url(img/home.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#end{
+    background-image: url(img/fields.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
