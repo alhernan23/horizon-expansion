@@ -50,11 +50,14 @@ a:visited{
     background-image: url(img/no.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 550px;
+    margin: 400px;
 }
 
 #loading{
     background-color: black;
+    text-align: center;
+    justify-content: center;
+    margin: 300px;
 }
 
 #start{
