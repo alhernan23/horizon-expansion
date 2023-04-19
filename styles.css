@@ -7,6 +7,12 @@ body{
     font-size: 30pt;
 }
 
+#puzzle-html{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 a:visited{
     color: black;
 }
@@ -51,30 +57,6 @@ a:visited{
 
 #start{
     background-image: url(img/start.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-#puzzle1{
-    background-image: url(img/backrooms.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-#puzzle2{
-    background-image: url(img/mall.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-#puzzle3{
-    background-image: url(img/pool.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-#puzzle4{
-    background-image: url(img/home.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
