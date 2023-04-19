@@ -43,12 +43,14 @@ a:visited{
     background-repeat: no-repeat;
     background-size: 100%;
     color: black;
+    padding-top: 550px;
 }
 
 #no{
     background-image: url(img/no.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 550px;
 }
 
 #loading{

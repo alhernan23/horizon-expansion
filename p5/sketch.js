@@ -7,7 +7,7 @@ function setup() {
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.parent('mySketch');
 
-    forrest1();
+    room1();
 
   }
   
@@ -17,7 +17,6 @@ function setup() {
   
     if (mode == 1){
       //functions that pertain for mode 1 called here
-      displayCat();
 
     }
 
