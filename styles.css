@@ -13,7 +13,11 @@ body{
     left: 0;
 }
 
-a:visited{
+a{
+    color: whitesmoke;
+}
+
+#linkcolor{
     color: black;
 }
 
