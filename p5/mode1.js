@@ -6,13 +6,6 @@ function room1(){
 }
 
 
-// load sounds before you use them
-function preload(){
-  soundFormats('mp3', 'ogg');
-  mySound1 = loadSound('../audio/redsound.mp3');
-}
-
-
 function displayChair() {
     chair = createImg('../img/chair.png');
     chair.position(100,300);
@@ -31,3 +24,11 @@ function displayChair() {
         mySound1.play();
       }
     }
+
+    function makeChair(){
+        if (mySound1.isPlaying()){
+          mySound1.pause(); 
+        } else{
+          mySound1.play();
+        }
+      }

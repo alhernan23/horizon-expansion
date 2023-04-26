@@ -2,6 +2,10 @@
 
 let mode = 1;
 
+//declare variable up at the top
+ let mySound1, mySound2, mySound3;
+//  let soundFormats;
+
 function setup() {
     // make the div called "mySketch" a p5.js canvas element
     let cnv = createCanvas(windowWidth, windowHeight);
@@ -11,13 +15,19 @@ function setup() {
 
   }
   
+// load sounds before you use them
+// function preload(){
+//   soundFormats=('mp3', 'ogg');
+//   mySound1 = loadSound('../audio/bluesound.mp3');
+// }
+
   function draw() {
 
     //for functions that need to loop
   
     if (mode == 1){
       //functions that pertain for mode 1 called here
-      preload()
+      // preload();
       displayChair();
       draw();
       makeChair();
