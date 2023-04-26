@@ -16,10 +16,10 @@ function setup() {
   }
   
 // load sounds before you use them
-// function preload(){
-//   soundFormats=('mp3', 'ogg');
-//   mySound1 = loadSound('../audio/bluesound.mp3');
-// }
+function preload(){
+  soundFormats=('mp3', 'ogg');
+  mySound1 = loadSound('../audio/bluesound.mp3');
+}
 
   function draw() {
 
@@ -28,9 +28,10 @@ function setup() {
     if (mode == 1){
       //functions that pertain for mode 1 called here
       // preload();
-      displayChair();
+      // displayChair();
       draw();
       makeChair();
+      setup();
     }
 
     if (mode == 2){
