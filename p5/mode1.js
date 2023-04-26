@@ -6,11 +6,11 @@ function room1(){
 }
 
 
-//load sounds before you use them
-// function preload(){
-//   soundFormats('mp3', 'ogg');
-//   mySound1 = loadSound('../audio/redsound.mp3');
-// }
+// load sounds before you use them
+function preload(){
+  soundFormats('mp3', 'ogg');
+  mySound1 = loadSound('../audio/redsound.mp3');
+}
 
 
 function displayChair() {
@@ -19,15 +19,15 @@ function displayChair() {
 
   }
   
-  // function draw() {
-  //   // background(0);
-  //   chair.mousePressed(makeChair);
-  // }
+  function draw() {
+    // background(0);
+    chair.mousePressed(makeChair);
+  }
 
-  //   function makeChair(){
-  //     if (mySound1.isPlaying()){
-  //       mySound1.pause(); 
-  //     } else{
-  //       mySound1.play();
-  //     }
-  //   }
+    function makeChair(){
+      if (mySound1.isPlaying()){
+        mySound1.pause(); 
+      } else{
+        mySound1.play();
+      }
+    }

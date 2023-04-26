@@ -17,7 +17,10 @@ function setup() {
   
     if (mode == 1){
       //functions that pertain for mode 1 called here
+      preload()
       displayChair();
+      draw();
+      makeChair();
     }
 
     if (mode == 2){
