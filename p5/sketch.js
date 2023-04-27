@@ -1,83 +1,109 @@
-//main js sketch that controls what happens in modes
+let mySound1, mySound2, mySound3;
 
-let mode = 1;
+let red, orange, yellow, green, blue;
 
 
 function setup() {
     // make the div called "mySketch" a p5.js canvas element
     let cnv = createCanvas(windowWidth, windowHeight);
+    cnv.parent('mySketch');
+  }
+  
+//load sounds before you use them
+function preload(){
+  // soundFormats('mp3', 'ogg');
+  mySound1 = loadSound('../audio/redsound.mp3');
+  mySound2 = loadSound('../audio/orangesound.mp3');
+  mySound3 = loadSound('../audio/yellowsound.mp3');
+  mySound4 = loadSound('../audio/greensound.mp3');
+  mySound5 = loadSound('../audio/bluesound.mp3');
+}
+
+
+function setup() {
+    // // make the div called "mySketch" a p5.js canvas element
+    // let cnv = createCanvas(windowWidth, windowHeight);
     // cnv.parent('mySketch');
 
-    room1();
+    //play sound when mouse is pressed on the canvas
+    // cnv.mousePressed(toggleSound);
 
+    red = createImg("../img/red.png");
+    red.class('object');
+    red.position(100,300);
+
+    orange = createImg("../img/orange.png");
+    orange.class('object');
+    orange.position(400,300);
+
+    yellow = createImg("../img/yellow.png");
+    yellow.class('object');
+    yellow.position(700,300);
+
+    green = createImg("../img/green.png");
+    green.class('object');
+    green.position(1000,300);
+
+    blue = createImg("../img/blue.png");
+    blue.class('object');
+    blue.position(1300,300);  
   }
   
   function draw() {
+    background(0);
+    red.mousePressed(makeRed);
+    orange.mousePressed(makeOrange);
+    yellow.mousePressed(makeYellow);
+    green.mousePressed(makeGreen);
+    blue.mousePressed(makeBlue);
+  }
 
-    //for functions that need to loop
-  
-    if (mode == 1){
-      //functions that pertain for mode 1 called here
+    function makeRed(){
+      if (mySound1.isPlaying()){
+        mySound1.pause(); 
+      } else{
+        mySound1.play();
+      }
     }
 
-    if (mode == 2){
-      //functions that pertain for mode 2 called here
-      
-    }
-
-    if (mode == 3){
-      //functions that pertain for mode 3 called here
-      
-    }
-
-    if (mode == 4){
-      //functions that pertain for mode 4 called here
-      
-    }
-
-    if (mode < 1){
-      mode = 1;
-    } else if (mode > 4){
-      mode = 4;
+    function makeOrange() {
+    if (mySound2.isPlaying()){
+      mySound2.pause();
+    } else {
+      mySound2.play();
     }
   }
 
-//WHEN SWITCHING PAGES WITH ARROW KEYS
-  function keyPressed(){
-    console.log(mode)
-    //for functions that only need to happen once on key press
-    if (keyCode == RIGHT_ARROW){
-      mode ++;
-    } else if (keyCode == LEFT_ARROW){
-      mode --;
-    }
-
-    if (mode == 1){
-      //functions that pertain for mode 1 called here
-      room1();
-    }
-
-    if (mode == 2){
-      //functions that pertain for mode 2 called here
-      room2();
-    }
-
-    if (mode == 3){
-      //functions that pertain for mode 3 called here
-      room3();
-    }
-
-    if (mode == 4){
-      //functions that pertain for mode 4 called here
-      room4();
+  function makeYellow() {
+    if (mySound3.isPlaying()){
+      mySound3.pause();
+    } else {
+      mySound3.play();
     }
   }
 
+  function makeGreen(){
+    if (mySound4.isPlaying()){
+      mySound4.pause(); 
+    } else{
+      mySound4.play();
+    }
+  }
 
-  // function mousePressed(){
-  //   //for functions that happen on mousePressed
+  function makeBlue(){
+    if (mySound5.isPlaying()){
+      mySound5.pause(); 
+    } else{
+      mySound5.play();
+    }
+  }
 
+//when you click on canvas, the sound just plays
+  // function toggleSound(){
+  //   mySound1.play();
   // }
+
+
   
   function windowResized() {
     // resize the canvas when the screen is resized.
