@@ -21,10 +21,6 @@ function preload(){
 
 
 function setup() {
-    // // make the div called "mySketch" a p5.js canvas element
-    // let cnv = createCanvas(windowWidth, windowHeight);
-    // cnv.parent('mySketch');
-
     //play sound when mouse is pressed on the canvas
     // cnv.mousePressed(toggleSound);
 
