@@ -55,9 +55,16 @@ a{
   cursor: pointer;
 }
 
-#type_button{
-    background-color: #D9D9D9;
+section{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-column-gap: 20px;
+    grid-auto-flow: dense;
+}
 
+.next_link{
+    grid-column: 5 / span 2;
+    padding-top: 550pt;
 }
 
 #next{
@@ -88,7 +95,7 @@ a{
     background-size: 100%;
 }
 
-#story{
+#archives{
     background-color: black;
 }
 
