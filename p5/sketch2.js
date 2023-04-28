@@ -24,23 +24,23 @@ function setup() {
     //play sound when mouse is pressed on the canvas
     // cnv.mousePressed(toggleSound);
 
-    red = createImg("../img/red.png");
+    red = createImg("../img/red2.png");
     red.class('object');
     red.position(100,300);
 
-    orange = createImg("../img/orange.png");
+    orange = createImg("../img/orange2.png");
     orange.class('object');
     orange.position(400,300);
 
-    yellow = createImg("../img/yellow.png");
+    yellow = createImg("../img/yellow2.png");
     yellow.class('object');
     yellow.position(700,300);
 
-    green = createImg("../img/green.png");
+    green = createImg("../img/green2.png");
     green.class('object');
     green.position(1000,300);
 
-    blue = createImg("../img/blue.png");
+    blue = createImg("../img/blue2.png");
     blue.class('object');
     blue.position(1300,300);  
   }
