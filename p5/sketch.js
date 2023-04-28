@@ -100,6 +100,25 @@ function setup() {
   // }
 
 
+  var startTypingButton = document.getElementById('type_button');
+  var typingContainer = document.getElementById('typing-container');
+  var textToType = 'Hello, world!';
+  var typingSpeed = 50; // in milliseconds
+  var typingIndex = 0;
+  
+  function typeNextCharacter() {
+    typingContainer.textContent += textToType.charAt(typingIndex);
+    typingIndex++;
+    
+    if (typingIndex < textToType.length) {
+      setTimeout(typeNextCharacter, typingSpeed);
+    }
+  }
+  
+  startTypingButton.addEventListener('click', function() {
+    typeNextCharacter();
+  });
+
   
   function windowResized() {
     // resize the canvas when the screen is resized.
