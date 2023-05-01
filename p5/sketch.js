@@ -26,7 +26,7 @@ function setup() {
 
     red = createImg("../img/red.png");
     red.class('object');
-    red.position(100,300);
+    red.position(100,400);
 
     orange = createImg("../img/orange.png");
     orange.class('object');
@@ -38,11 +38,11 @@ function setup() {
 
     green = createImg("../img/green.png");
     green.class('object');
-    green.position(1000,300);
+    green.position(950,250);
 
     blue = createImg("../img/blue.png");
     blue.class('object');
-    blue.position(1300,300);  
+    blue.position(1300,350);  
   }
   
   function draw() {

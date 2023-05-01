@@ -13,7 +13,7 @@ function setup() {
 function preload(){
   // soundFormats('mp3', 'ogg');
   mySound1 = loadSound('../audio/redsound.mp3');
-  mySound2 = loadSound('../audio/orangesound.mp3');
+  mySound2 = loadSound('../audio/orangesound2.mp3');
   mySound3 = loadSound('../audio/yellowsound.mp3');
   mySound4 = loadSound('../audio/greensound.mp3');
   mySound5 = loadSound('../audio/bluesound.mp3');
@@ -34,15 +34,15 @@ function setup() {
 
     yellow = createImg("../img/yellow2.png");
     yellow.class('object');
-    yellow.position(700,300);
+    yellow.position(730,350);
 
     green = createImg("../img/green2.png");
     green.class('object');
-    green.position(1000,300);
+    green.position(1050,350);
 
     blue = createImg("../img/blue2.png");
     blue.class('object');
-    blue.position(1300,300);  
+    blue.position(1300,200);  
   }
   
   function draw() {
