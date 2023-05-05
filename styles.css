@@ -93,6 +93,9 @@ section{
     background-image: url(img/start.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 390pt;
+    padding-left: 500pt;
+    font-size: 40pt;
 }
 
 #archives{
