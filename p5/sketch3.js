@@ -13,10 +13,10 @@ function setup() {
 function preload(){
   // soundFormats('mp3', 'ogg');
   mySound1 = loadSound('../audio/redsound3.mp3');
-  mySound2 = loadSound('../audio/orangesound.mp3');
-  mySound3 = loadSound('../audio/yellowsound.mp3');
-  mySound4 = loadSound('../audio/greensound.mp3');
-  mySound5 = loadSound('../audio/bluesound.mp3');
+  mySound2 = loadSound('../audio/orangesound3.mp3');
+  mySound3 = loadSound('../audio/yellowsound3.mp3');
+  mySound4 = loadSound('../audio/greensound3.mp3');
+  mySound5 = loadSound('../audio/bluesound3.mp3');
 }
 
 
