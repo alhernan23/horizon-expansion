@@ -13,10 +13,10 @@ function setup() {
 function preload(){
   // soundFormats('mp3', 'ogg');
   mySound1 = loadSound('../audio/redsound.mp3');
-  mySound2 = loadSound('../audio/orangesound.mp3');
-  mySound3 = loadSound('../audio/yellowsound.mp3');
-  mySound4 = loadSound('../audio/greensound.mp3');
-  mySound5 = loadSound('../audio/bluesound.mp3');
+  // mySound2 = loadSound('../audio/orangesound.mp3');
+  // mySound3 = loadSound('../audio/yellowsound.mp3');
+  // mySound4 = loadSound('../audio/greensound.mp3');
+  // mySound5 = loadSound('../audio/bluesound.mp3');
 }
 
 
@@ -48,51 +48,51 @@ function setup() {
   function draw() {
     background(0);
     red.mousePressed(makeRed);
-    orange.mousePressed(makeOrange);
-    yellow.mousePressed(makeYellow);
-    green.mousePressed(makeGreen);
-    blue.mousePressed(makeBlue);
+    // orange.mousePressed(makeOrange);
+    // yellow.mousePressed(makeYellow);
+    // green.mousePressed(makeGreen);
+    // blue.mousePressed(makeBlue);
   }
 
-    function makeRed(){
-      if (mySound1.isPlaying()){
-        mySound1.pause(); 
-      } else{
-        mySound1.play();
-      }
-    }
+  //   function makeRed(){
+  //     if (mySound1.isPlaying()){
+  //       mySound1.pause(); 
+  //     } else{
+  //       mySound1.play();
+  //     }
+  //   }
 
-    function makeOrange() {
-    if (mySound2.isPlaying()){
-      mySound2.pause();
-    } else {
-      mySound2.play();
-    }
-  }
+  //   function makeOrange() {
+  //   if (mySound2.isPlaying()){
+  //     mySound2.pause();
+  //   } else {
+  //     mySound2.play();
+  //   }
+  // }
 
-  function makeYellow() {
-    if (mySound3.isPlaying()){
-      mySound3.pause();
-    } else {
-      mySound3.play();
-    }
-  }
+  // function makeYellow() {
+  //   if (mySound3.isPlaying()){
+  //     mySound3.pause();
+  //   } else {
+  //     mySound3.play();
+  //   }
+  // }
 
-  function makeGreen(){
-    if (mySound4.isPlaying()){
-      mySound4.pause(); 
-    } else{
-      mySound4.play();
-    }
-  }
+  // function makeGreen(){
+  //   if (mySound4.isPlaying()){
+  //     mySound4.pause(); 
+  //   } else{
+  //     mySound4.play();
+  //   }
+  // }
 
-  function makeBlue(){
-    if (mySound5.isPlaying()){
-      mySound5.pause(); 
-    } else{
-      mySound5.play();
-    }
-  }
+  // function makeBlue(){
+  //   if (mySound5.isPlaying()){
+  //     mySound5.pause(); 
+  //   } else{
+  //     mySound5.play();
+  //   }
+  // }
 
   var startTypingButton = document.getElementById('start-typing');
   var typingContainer = document.getElementById('typing-container');
@@ -113,10 +113,10 @@ function setup() {
     typeNextCharacter();
   });
 
-//when you click on canvas, the sound just plays
-  // function toggleSound(){
-  //   mySound1.play();
-  // }
+// when you click on canvas, the sound just plays
+  function toggleSound(){
+    mySound1.play();
+  }
   
   function windowResized() {
     // resize the canvas when the screen is resized.
