@@ -100,6 +100,32 @@ section{
 
 #archives{
     background-color: black;
+    color: whitesmoke;
+}
+
+#fake_archive_1{
+    color: whitesmoke;
+    background-image: url(img/home2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#fake_archive_2{
+    color: whitesmoke;
+    background-image: url(img/backrooms.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+#start-typing{
+   margin-top: 40px;
+}
+
+#typing-container{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 #end{
