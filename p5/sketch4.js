@@ -46,7 +46,7 @@ function setup() {
   }
   
   function draw() {
-    background(0);
+    // background(0);
     red.mousePressed(makeRed);
     orange.mousePressed(makeOrange);
     yellow.mousePressed(makeYellow);
