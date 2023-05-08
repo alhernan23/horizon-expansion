@@ -96,7 +96,7 @@ function setup() {
 
   var startTypingButton = document.getElementById('start-typing');
   var typingContainer = document.getElementById('typing-container');
-  var textToType = '[seriously, what are you doing here? nothing to see, move along...]';
+  var textToType = '[hvirlfhob, dszg ziv blf wlrmt sviv? mlgsrmt gl hvv, nlev zolmt...]';
   var typingSpeed = 50; // in milliseconds
   var typingIndex = 0;
   
