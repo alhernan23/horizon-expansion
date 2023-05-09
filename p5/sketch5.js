@@ -1,7 +1,7 @@
 let bgMusic; // Declare a variable for the background music
 
 function preload() {
-  bgMusic = loadSound('../audio/redsound.mp3'); // Load the music file
+  bgMusic = loadSound('../audio/detour2.mp3'); // Load the music file
 }
 
 function setup() {
