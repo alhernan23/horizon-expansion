@@ -81,7 +81,7 @@ function makeBlue(){
 
 var startTypingButton = document.getElementById('start-typing');
 var typingContainer = document.getElementById('typing-container');
-var textToType = '[seriously, nothing to see here, just keep moving along...sjkhfksjahfjksahdfjkhajkdshfjkasdhfjkhadsjkfhksajdhfsjkahfjkahsjkfh';
+var textToType = '[seriously, nothing to see here, just keep moving along...viiliviiliviiliviiliviiliviiliviiliviiliviiliviiliviiliviili';
 var typingSpeed = 50; // in milliseconds
 var typingIndex = 0;
 
